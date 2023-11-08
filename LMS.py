@@ -17,3 +17,22 @@ mycursor.execute("create table if not exists books  (book_name varchar(30),book_
 mycursor.execute("create table if not exists library_trans(cardno char(10),foreign key(cardno) references main_lib(cardno),book_name varchar(20),dateoflend date,dateofreturn date)") 
 mycursor.execute("create table if not exists buy_new_books(orderno varchar(6) primary key,name_of_book varchar(20),del_date date,price char(4))")
 mydb.commit()
+
+while True:
+    
+    print("1-Create a new account")
+    print("2-See the account info")
+    print("3-Update card holder info")
+    print("4-Delete account")
+    print("5-Add new books")
+    print("6-See all books")
+    print("7-Update book details")
+    print("8-Delete book")
+    print("9-Lend a book")
+    print("10-Return book")
+    print("11-Display lending history")
+    print("12-Order new book")
+    print("13-Update order details")
+    print("14-Display order history")
+    print("15-EXIT the program")
+    ch=int(input("enter your choice"))

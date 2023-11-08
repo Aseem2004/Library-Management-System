@@ -36,3 +36,24 @@ while True:
     print("14-Display order history")
     print("15-EXIT the program")
     ch=int(input("enter your choice"))
+    
+
+#TO CREATE A NEW LIBRARY ACCOUNT(QUERY 1)
+    if ch==1:
+        print("To go back press 1")
+        print()     
+        print("To continue press 2")
+        print()
+        a=int(input("enter your choice:"))
+        if a==1:
+            continue
+        if a==2:
+            print("FILL ALL PERSONAL DETAILS OF ACCOUNT HOLDER")
+            cardno=str(input("enter card no:"))
+            name_of_person=str(input("Enter name:"))
+            phone_no=str(input("Enter phone no:"))
+            address=str(input("Enter the address(max 30 words):"))
+            dob=str(input("Enter the date of birth(yyyy-mm-dd):"))
+            mycursor.execute("insert into main_lib values('"+cardno+"','"+name_of_person+"','"+phone_no+"','"+address+"','"+dob+"')")
+            mydb.commit()
+            print("ACCOUNT IS SUCCESSFULLY CREATED!!!!")

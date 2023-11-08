@@ -57,3 +57,15 @@ while True:
             mycursor.execute("insert into main_lib values('"+cardno+"','"+name_of_person+"','"+phone_no+"','"+address+"','"+dob+"')")
             mydb.commit()
             print("ACCOUNT IS SUCCESSFULLY CREATED!!!!")
+                        
+#TO SEE DETAILS OF CARD HOLDER(QUERY 2)
+    
+    elif ch==2:
+        cardno=str(input("Enter card no:"))
+        
+        mycursor.execute("select  *  from main_lib where cardno='"+cardno+"'")
+        data=mycursor.fetchall()
+        if data==[]:
+            print("No record found")
+        else:
+            print(data)

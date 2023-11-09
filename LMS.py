@@ -110,3 +110,31 @@ while True:
             mycursor.execute("select * from main_lib")
             for i in mycursor:
                 print(i)
+                                
+#TO UPDATE ADDRESS(CHOICE 3)
+        elif ch1==3:
+            mycursor.execute("select * from main_lib")
+            for i in mycursor:
+                print(i)
+            cardno=str(input("Enter card no:"))
+            address=str(input("Enter new address:"))
+            mycursor.execute("update main_lib set address='"+address+"' where cardno='"+cardno+"'")
+            mydb.commit()
+            print("Address has been updated")
+            mycursor.execute("select * from main_lib")
+            for i in mycursor:
+                print(i)
+
+#TO UPDATE DATE OF BIRTH(CHOICE 4)           
+        elif ch1==4:
+            mycursor.execute("select * from main_lib")
+            for i in mycursor:
+                print(i)
+            cardno=str(input("Enter card no:"))
+            dob=str(input("Enter new date of birth(yyyy-mm-dd):"))
+            mycursor.execute("update library_master set dob='"+dob+"' where cardno='"+cardno+"'")
+            mydb.commit()
+            print("Date of birth has been updated")
+            mycursor.execute("select * from main_lib")
+            for i in mycursor:
+                print(i)

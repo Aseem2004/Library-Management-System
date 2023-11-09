@@ -69,3 +69,16 @@ while True:
             print("No record found")
         else:
             print(data)
+                        
+#TO UPDATE CARD HOLDER INFORMATION(QUERY 3)            
+    elif ch==3:
+         
+        print("Press 1 to update name:")
+        print()
+        print("Press 2 to update phone no:")
+        print()
+        print("Press 3 to update address:")
+        print()
+        print("Press 4 to update date of birth:")
+        print()
+        ch1=int(input("Enter your choice:"))

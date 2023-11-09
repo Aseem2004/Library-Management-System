@@ -82,3 +82,31 @@ while True:
         print("Press 4 to update date of birth:")
         print()
         ch1=int(input("Enter your choice:"))
+                
+#TO UPDATE NAME(CHOICE 1) 
+        if ch1==1:
+            mycursor.execute("select * from main_lib")
+            for i in mycursor:
+                print(i)
+            cardno=str(input("Enter card no:"))
+            name_of_person=str(input("Enter new name:"))
+            mycursor.execute("update main_lib set name_of_person='"+name_of_person+"' where cardno='"+cardno+"'")
+            mydb.commit()
+            print("Name has been updated")
+            mycursor.execute("select * from main_lib")
+            for i in mycursor:
+                print(i)
+                
+#TO UPDATE PHONE NUMBER(CHOICE 2)            
+        elif ch1==2:
+            mycursor.execute("select * from main_lib")
+            for i in mycursor:
+                print(i)
+            cardno=str(input("Enter card no:"))
+            phone_no=str(input("Enter new phone no:"))
+            mycursor.execute("update main_lib set phone_no='"+phone_no+"' where cardno='"+cardno+"'")
+            mydb.commit()
+            print("Phone Number has been updated")
+            mycursor.execute("select * from main_lib")
+            for i in mycursor:
+                print(i)

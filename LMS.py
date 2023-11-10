@@ -138,3 +138,16 @@ while True:
             mycursor.execute("select * from main_lib")
             for i in mycursor:
                 print(i)
+                     
+#TO DELETE AN ACCOUNT(QUERY 4)              
+    elif ch==4:
+        mycursor.execute("select * from main_lib ")
+        for i in mycursor:
+                print(i)
+        cardno=str(input("Enter card no:"))
+        mycursor.execute("delete from main_lib where cardno='"+cardno+"'")
+        mydb.commit()
+        print("Account removed succesfully")
+        mycursor.execute("select * from main_lib")
+        for i in mycursor:
+                print(i)

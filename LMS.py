@@ -151,3 +151,17 @@ while True:
         mycursor.execute("select * from main_lib")
         for i in mycursor:
                 print(i)
+                                
+#TO ADD NEW BOOK(QUERY 5)              
+    elif ch==5:
+        print("FILL ALL BOOK DETAILS ")
+        book_name=str(input("enter book  name:"))
+        book_no=str(input("Enter no (max 5 characters):"))
+        genre=str(input("Enter genre:"))
+        authors_name=str(input("Enter the authors name (max 15 words):"))
+        language=str(input("Enter the language of book:"))
+        mycursor.execute("insert into books values('"+book_name+"','"+book_no+"','"+genre+"','"+authors_name+"','"+language+"')")
+        mydb.commit()
+        print("Book added succesfully")
+        for i in mycursor:
+            print(i)

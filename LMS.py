@@ -165,3 +165,10 @@ while True:
         print("Book added succesfully")
         for i in mycursor:
             print(i)
+                    
+#TO SEE BOOK DETAILS(QUERY 6)     
+    elif ch==6:
+        book_no=str(input("Enter Book No:"))
+        mycursor.execute("select  *  from books where book_no='"+book_no+"'")
+        for i in mycursor:
+            print(i)

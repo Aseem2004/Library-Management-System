@@ -184,3 +184,31 @@ while True:
         print("Press 4 to update Language")
         print()
         ch1=int(input("Enter your choice:"))
+        
+#TO UPDATE BOOK NAME(CHOICE 1)
+        if ch1==1:
+            mycursor.execute("select * from books")
+            for i in mycursor:
+                print(i)
+            book_no=str(input("Enter book no:"))
+            name_of_book=str(input("Enter new name:"))
+            mycursor.execute("update books set book_name='"+name_of_book+"' where book_no='"+book_no+"'")
+            mydb.commit()
+            print("Name has been updated")
+            mycursor.execute("select * from books")
+            for i in mycursor:
+                print(i)
+                
+#TO UPDATE GENRE(CHOICE 2)              
+        elif ch1==2:
+            mycursor.execute("select * from books")
+            for i in mycursor:
+                print(i)
+            book_no=str(input("Enter book no:"))
+            genre=str(input("Enter new genre:"))
+            mycursor.execute("update books set genre='"+genre+"' where book_no='"+book_no+"'")
+            mydb.commit()
+            print("Genre has been updated")
+            mycursor.execute("select * from books")
+            for i in mycursor:
+                print(i)

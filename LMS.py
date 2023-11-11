@@ -172,3 +172,15 @@ while True:
         mycursor.execute("select  *  from books where book_no='"+book_no+"'")
         for i in mycursor:
             print(i)
+                        
+#TO UPDATE BOOK DETAILS(QUERY 7)         
+    elif ch==7:
+        print("Press 1 to update Book name")
+        print()
+        print("Press 2 to update Genre")
+        print()
+        print("Press 3 to update Author Name")
+        print()
+        print("Press 4 to update Language")
+        print()
+        ch1=int(input("Enter your choice:"))

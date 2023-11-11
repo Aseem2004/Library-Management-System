@@ -212,3 +212,31 @@ while True:
             mycursor.execute("select * from books")
             for i in mycursor:
                 print(i)
+                                
+#TO UPDATE AUTHOR NAME(CHOICE 3)               
+        elif ch1==3:
+            mycursor.execute("select * from books")
+            for i in mycursor:
+                print(i)
+            book_no=str(input("Enter book no:"))
+            author=str(input("Enter new author's name:"))
+            mycursor.execute("update books set authors_name='"+author+"' where book_no='"+book_no+"'")
+            mydb.commit()
+            print("Author's name has been updated")
+            mycursor.execute("select * from books")
+            for i in mycursor:
+                print(i)
+                
+#TO UPDATE LANGUAGE(CHOICE 4)            
+        elif ch1==4:
+            mycursor.execute("select * from books")
+            for i in mycursor:
+                print(i)
+            book_no=str(input("Enter book no:"))
+            language=str(input("Enter new language:"))
+            mycursor.execute("update books set language='"+language+"' where book_no='"+book_no+"'")
+            mydb.commit()
+            print("Language has been updated")
+            mycursor.execute("select * from books")
+            for i in mycursor:
+                print(i)

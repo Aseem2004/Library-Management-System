@@ -240,3 +240,16 @@ while True:
             mycursor.execute("select * from books")
             for i in mycursor:
                 print(i)
+                                
+#TO DELETE A BOOK(QUERY 8)              
+    elif ch==8:
+        mycursor.execute("select * from books")
+        for i in mycursor:
+            print(i)
+        book_no=str(input("Enter book no:"))
+        mycursor.execute("delete from books where book_no='"+book_no+"'")
+        mydb.commit()
+        print("Details of book removed succesfully")
+        mycursor.execute("select * from books")
+        for i in mycursor:
+            print(i)

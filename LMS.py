@@ -253,3 +253,20 @@ while True:
         mycursor.execute("select * from books")
         for i in mycursor:
             print(i)
+                        
+#TO LEND A BOOK(QUERY 9)           
+    elif ch==9:
+        print("To go back press 1")
+        print()
+        print("To continue press 2")
+        print()
+        a=int(input("Enter your choice:"))
+        if a==1:
+            continue
+        if a==2:
+            cardno=str(input("Enter card no:"))
+            book_name=str(input("Enter the name of the book:"))
+            dateoflend=str(input("Enter date of lending(yyyy-mm-dd)"))
+            dateofreturn=str(input("enter date of return(yyyy-mm-dd):"))    
+            mycursor.execute("insert into library_trans values('"+cardno+"','"+book_name+"','"+dateoflend+"','"+dateofreturn+"')")
+            mydb.commit()

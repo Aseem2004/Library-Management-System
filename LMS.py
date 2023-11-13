@@ -270,3 +270,18 @@ while True:
             dateofreturn=str(input("enter date of return(yyyy-mm-dd):"))    
             mycursor.execute("insert into library_trans values('"+cardno+"','"+book_name+"','"+dateoflend+"','"+dateofreturn+"')")
             mydb.commit()
+                        
+#TO RETURN A BOOK(PART OF UPDATION)(QUERY 10)           
+    elif ch==10:
+        print("To go back press 1")
+        print()
+        print("To continue press 2")
+        print()
+        a=int(input("enter your choice:"))
+        if a==1:
+            continue
+        if a==2:
+            cardno=str(input("Enter card no:"))
+            date_of_return=str(input("Enter date of return(yyyy-mm-dd):"))
+            mycursor.execute("update library_trans set dateofreturn='"+date_of_return+"' where cardno='"+cardno+"'")
+            mydb.commit()

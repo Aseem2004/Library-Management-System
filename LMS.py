@@ -292,3 +292,12 @@ while True:
         mycursor.execute("select  *  from library_trans where cardno='"+cardno+"'")
         for i in mycursor:
          print(i)
+                     
+#TO ORDER A NEW BOOK(QUERY 12)
+    elif ch==12:
+        orderno=str(input("Enter the order no:"))
+        name_of_book=str(input("Enter the name of the book:"))
+        del_date=str(input("Enter the expected delivery date of books(yyyy-mm-dd):"))
+        price=str(input("Enter the price of the book"))
+        mycursor.execute("insert into buy_new_books values('"+orderno+"','"+name_of_book+"','"+del_date+"','"+price+"')")
+        mydb.commit()

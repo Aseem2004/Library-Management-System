@@ -285,3 +285,10 @@ while True:
             date_of_return=str(input("Enter date of return(yyyy-mm-dd):"))
             mycursor.execute("update library_trans set dateofreturn='"+date_of_return+"' where cardno='"+cardno+"'")
             mydb.commit()
+                        
+#TO SEE LENDING HISTORY(QUERY 11)          
+    elif ch==11:
+        cardno=str(input("Enter card no:"))
+        mycursor.execute("select  *  from library_trans where cardno='"+cardno+"'")
+        for i in mycursor:
+         print(i)

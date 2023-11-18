@@ -301,3 +301,13 @@ while True:
         price=str(input("Enter the price of the book"))
         mycursor.execute("insert into buy_new_books values('"+orderno+"','"+name_of_book+"','"+del_date+"','"+price+"')")
         mydb.commit()
+                
+#TO UPDATE ORDER DETAILS(QUERY 13)       
+    elif ch==13:
+        print("Press 1 to update name of book")
+        print() 
+        print("Press 2 to update delivery date")
+        print()
+        print("Press 3 to update price")
+        print()
+        ch1=int(input("Enter your choice:"))

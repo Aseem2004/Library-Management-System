@@ -311,3 +311,31 @@ while True:
         print("Press 3 to update price")
         print()
         ch1=int(input("Enter your choice:"))
+                
+#TO UPDATE BOOK NAME(CHOICE 1)        
+        if ch1==1:
+            mycursor.execute("select * from buy_new_books")
+            for i in mycursor:
+                print(i)
+            orderno=str(input("Enter order no:"))
+            name_of_book=str(input("Enter new name:"))
+            mycursor.execute("update buy_new_books set name_of_book='"+name_of_book+"' where orderno='"+orderno+"'")
+            mydb.commit()
+            print("Name has been updated")
+            mycursor.execute("select * from buy_new_books")
+            for i in mycursor:
+                print(i)
+                
+#TO UPDATE DELIVERY DATE(CHOICE 2)               
+        elif ch1==2:
+            mycursor.execute("select * from buy_new_books")
+            for i in mycursor:
+                print(i)
+            orderno=str(input("Enter card no:"))
+            del_date=str(input("Enter new delivery date(yyyy-mm-dd):"))
+            mycursor.execute("update buy_new_books set del_date='"+del_date+"' where orderno='"+orderno+"'")
+            mydb.commit()
+            print("Delivery date has been updated")
+            mycursor.execute("select * from buy_new_books")
+            for i in mycursor:
+                print(i)

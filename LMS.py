@@ -339,3 +339,17 @@ while True:
             mycursor.execute("select * from buy_new_books")
             for i in mycursor:
                 print(i)
+                               
+#TO UPDATE PRICE(CHOICE 3)               
+        elif ch1==3:
+            mycursor.execute("select * from buy_new_books")
+            for i in mycursor:
+                print(i)
+            orderno=str(input("Enter card no:"))
+            price=str(input("Enter new price:"))
+            mycursor.execute("update buy_new_books set price='"+price+"' where orderno='"+orderno+"'")
+            mydb.commit()
+            print("Price has been updated")
+            mycursor.execute("select * from buy_new_books")
+            for i in mycursor:
+                print(i)

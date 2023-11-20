@@ -353,3 +353,10 @@ while True:
             mycursor.execute("select * from buy_new_books")
             for i in mycursor:
                 print(i)
+                           
+#TO DISPLAY ORDERING HISTORY(QUERY 14)
+    elif ch==14:
+        orderno=str(input("Enter order number:"))
+        mycursor.execute("select * from buy_new_books where orderno='"+orderno+"'")
+        for i in mycursor:
+            print(i)

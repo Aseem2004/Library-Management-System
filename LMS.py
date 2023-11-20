@@ -360,3 +360,7 @@ while True:
         mycursor.execute("select * from buy_new_books where orderno='"+orderno+"'")
         for i in mycursor:
             print(i)
+                        
+#TO EXIT THE PROGRAM(QUERY 15)           
+    else:
+        sys.exit()

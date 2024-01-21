@@ -1,2 +1,2 @@
-# Library-Management-System (MySQL+Python)
+# Library-Management-System 
 Hi everyone, this is a Library Management System

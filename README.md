@@ -26,3 +26,11 @@
 <li><b>Exit the Program:</b> Users can exit the program.</li>
 </ul>
 </section>
+
+<section>
+<h2>Technologies Used</h2>
+<ul>
+<li>MySQL: For storing user accounts, book information, lending history, and order history.</li>
+<li>Python: For building the application logic and user interface.</li>
+</ul>
+</section>

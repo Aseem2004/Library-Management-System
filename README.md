@@ -34,3 +34,26 @@
 <li>Python: For building the application logic and user interface.</li>
 </ul>
 </section>
+
+<section>
+<h2>How to Use</h2>
+<ol>
+<li><strong>Installation</strong>:
+<ul>
+<li>Install MySQL and Python on your system.</li>
+<li>Connect MySQL with Python and install MySQL Connector using PIP.</li>
+</ul>
+</li>
+<li><strong>Running the Application</strong>:
+<ul>
+<li>Run the Python application to start the Online Library Management System.</li>
+<li>Application will run on the Python environment.</li>
+</ul>
+</li>
+<li><strong>Functionality</strong>:
+<ul>
+<li>Use the provided features to manage library operations efficiently.</li>
+<li>Subsequent database will also be created and updated based on your activity.</li>
+</ul>
+</ol>
+</section>

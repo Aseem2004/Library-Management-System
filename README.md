@@ -57,3 +57,23 @@
 </ul>
 </ol>
 </section>
+
+<section>
+<h2>Output</h2>
+<p>These are screenshots of the output rendered with some test values.</p>
+  
+![op01](https://github.com/Aseem2004/Library-Management-System/assets/95762431/37964e83-663c-4dcb-97b5-6fcd69686a36)
+![op02](https://github.com/Aseem2004/Library-Management-System/assets/95762431/b96fcdd6-45e4-4b6a-ba06-d973c9f4e55a)
+![op03](https://github.com/Aseem2004/Library-Management-System/assets/95762431/afb35036-c039-4210-8d68-578685f7b8fb)
+![op04](https://github.com/Aseem2004/Library-Management-System/assets/95762431/d9929f7e-d940-4b98-9b6b-c7482c315193)
+![op05](https://github.com/Aseem2004/Library-Management-System/assets/95762431/70e17d29-7af4-497a-910d-06cdb04b0212)
+![op06](https://github.com/Aseem2004/Library-Management-System/assets/95762431/ede694eb-9ce9-4033-809d-1df10077ab29)
+![op07](https://github.com/Aseem2004/Library-Management-System/assets/95762431/afac63c6-91bb-4107-af8b-7740d1c976da)
+![op08](https://github.com/Aseem2004/Library-Management-System/assets/95762431/e41d2346-9076-49f3-969e-994829031898)
+![op09](https://github.com/Aseem2004/Library-Management-System/assets/95762431/b1868268-a4a6-41a4-9abd-a516a8d34e30)
+![op10](https://github.com/Aseem2004/Library-Management-System/assets/95762431/b70309ff-ae25-4816-b6e3-2583e65d08c2)
+![op11](https://github.com/Aseem2004/Library-Management-System/assets/95762431/76b096eb-c046-475b-92eb-1e01690b37c1)
+![op12](https://github.com/Aseem2004/Library-Management-System/assets/95762431/1d0e3467-b637-4202-a05d-403004bda976)
+![op13](https://github.com/Aseem2004/Library-Management-System/assets/95762431/bd2a52d4-b1c8-476e-a326-870f95135b53)
+
+</section>

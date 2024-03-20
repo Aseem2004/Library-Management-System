@@ -77,3 +77,9 @@
 ![op13](https://github.com/Aseem2004/Library-Management-System/assets/95762431/bd2a52d4-b1c8-476e-a326-870f95135b53)
 
 </section>
+
+
+<section>
+<h2>Contributing</h2>
+<p>Contributions to this project are welcome! If you have any suggestions or improvements, feel free to fork the repository and submit a pull request.</p>
+</section>
